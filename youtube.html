@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+      }
+
+      .header input[type=text] {
+        padding:7px;
+        width:550px;
+        height: 15px;
+        margin-top: 10px;
+        margin-left: 300px;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: thin;
+        text-align: left;
+        outline: none;
+      }
+
+      #logo {
+        flex-grow: 1;
+      }
+      #search-bar {
+        display: block;
+        float:left;
+      }
+      #button {
+        display: block;
+        margin-top: 10px;
+        margin-left: -2px;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: thin;
+        height: 29px;
+        float:left;
+      }
+      #account-info {
+        flex-grow: 1;
+        text-align: right;
+      }
+
+      .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(249, 249, 249);
+      }
+
+        #player {
+          display:flex;
+          flex-direction: column;
+          margin-left: 100px;
+          margin-top: 25px;
+        }
+
+        .info {
+            display:flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+        }
+        .leftinfo {
+          display: flex;
+          flex-direction: column;
+        }
+        .rightinfo {
+          display: flex;
+          background-color: red;
+          align-self: flex-end;
+        }
+
+        #thumbs {
+          width: 400px;
+        }
+
+        #recs {
+          display: flex;
+          flex-direction: column;
+          margin-top: 25px;
+          margin-left: 25px;
+
+        }
+
+
+      </style>
+    </head>
+
+  <body>
+    <div class="container">
+
+      <!-- header -->
+      <nav class="header">
+        <div id="logo">
+          <a href="https://youtube.com">
+          <img src="images\nav-bar\menu-logo.png" alt="menu icon and youtube logo" height="56">
+          </a>
+        </div>
+
+        <div style="flex-grow: 2;">
+          <form>
+            <input type="text" placeholder="Search" id="search-bar">
+            <img src="images\nav-bar\search-button.png" alt="search-button"  id="button">
+
+          </form>
+        </div>
+
+        <div id="account-info">
+          <img src="images\nav-bar\account.png" alt="account info buttons" height = "56">
+        </div>
+      </nav>
+      <!-- end of header -->
+
+      <!-- body -->
+      <div class="body">
+        <div id="player">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/mH0_XpSHkZo"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+          picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info">
+            <div class="leftinfo">
+                <p style="font-size: 12px; line-height: 1.4">
+                  <a href="https://www.youtube.com/results?search_query=%23TWICE">#TWICE</a>
+                  <a href="https://www.youtube.com/results?search_query=%23%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4"> #트와이스 </a>
+                  <a href="https://www.youtube.com/results?search_query=%23MOREandMORE"> #MOREandMORE</a>
+                  <br>
+                  <span style="font-size: 18px">TWICE "MORE & MORE" M/V</span>
+                </p>
+                <p style="font-size: 12px; line-height:0.01">69,217,150 views • Jun 1, 2020</p>
+            </div>
+            <div class="rightinfo">
+                <img src="images\thumbsupbar.png" id="thumbs">
+            </div>
+          </div>
+
+            <img src="images\jyp.png">
+
+        </div>
+
+        <div id="recs">
+          Up next
+          <img src="images\sidebar.png" >
+        </div>
+
+      </div>
+      <!-- end of body -->
+
+    </div>
+    <!-- end of container -->
+
+</body>
+</HTML>
